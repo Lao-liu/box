@@ -10,10 +10,19 @@ Box 致力于帮助提升 PHP 应用程序的编程体验，尤其有助于 Hype
 
 #### 安装 box
 
-##### Mac
+##### Mac x86_64
 
 ```bash
 wget https://github.com/hyperf/box/releases/download/v0.5.5/box_x86_64_macos -O box
+sudo mv ./box /usr/local/bin/box
+sudo chmod 755 /usr/local/bin/box
+// 确保 /usr/local/bin/box 在你的 $PATH 环境中，或者将 `box` 放到你想要的任意 $PATH 路径中
+```
+
+##### Mac Apple Silicon
+
+```bash
+wget https://github.com/hyperf/box/releases/download/v0.5.5/box_arm64_macos -O box
 sudo mv ./box /usr/local/bin/box
 sudo chmod 755 /usr/local/bin/box
 // 确保 /usr/local/bin/box 在你的 $PATH 环境中，或者将 `box` 放到你想要的任意 $PATH 路径中
